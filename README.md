@@ -32,21 +32,25 @@ The config that I use it too complicated for the average person's needs. If all 
    bind MOUSE +attack2
    ```
 
+1. Restart TF2
+
 ### Uber Bind
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `medic.cfg`
 1. Below the line that says `exec reset`, add:
 
-```
-alias alertUber "say_team UBER POPPED!!!!!"
-alias +alertAndPopUber "+attack2; alertUber;"
-alias -alertAndPopUber "-attack2;"
-bind MOUSE2 +alertAndPopUber
-```
+   ```
+   alias alertUber "say_team UBER POPPED!!!!!"
+   alias +alertAndPopUber "+attack2; alertUber;"
+   alias -alertAndPopUber "-attack2;"
+   bind MOUSE2 +alertAndPopUber
+   ```
 
 1. Open `reset.cfg`, and reset `MOUSE2` to its default command:
 
    ```
    bind MOUSE +attack2
    ```
+
+1. Restart TF2
