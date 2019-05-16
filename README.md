@@ -4,7 +4,7 @@ The config that I use it too complicated for the average person's needs. If all 
 
 ## Install
 
-1. Download this repo
+1. [Download](https://github.com/rufio-tf2/starter-config/archive/master.zip) this repo
 1. Unzip it
 1. If your folder structure is `starter-config-master/starter-config-master` save the inner folder and delete the outer folder
 1. Move the remaining folder into your `tf/custom` folder
@@ -13,7 +13,9 @@ The config that I use it too complicated for the average person's needs. If all 
 
 ## Configure things
 
-### Rocket Jump Script
+### Examples
+
+#### Rocket Jump Script
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `soldier.cfg`
@@ -29,12 +31,12 @@ The config that I use it too complicated for the average person's needs. If all 
 1. Open `reset.cfg`, and reset the `KEY` to its default command (look [here](https://wiki.teamfortress.com/wiki/List_of_default_keys)). For example, if you used `MOUSE2` (right-click) for the rocket jump script, you should add this:
 
    ```
-   bind MOUSE +attack2
+   bind MOUSE2 +attack2
    ```
 
 1. Restart TF2
 
-### Uber Bind
+#### Uber Bind
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `medic.cfg`
@@ -50,7 +52,7 @@ The config that I use it too complicated for the average person's needs. If all 
 1. Open `reset.cfg`, and reset `MOUSE2` to its default command:
 
    ```
-   bind MOUSE +attack2
+   bind MOUSE2 +attack2
    ```
 
 1. Restart TF2
