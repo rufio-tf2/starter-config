@@ -19,7 +19,7 @@ The config that I use it too complicated for the average person's needs. If all 
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `soldier.cfg`
-1. Below the line that says `exec reset`, add:
+1. Below the line that says `exec allclass`, add:
 
    ```
    alias +rocketJump "+jump; +duck; +attack;"
@@ -40,7 +40,7 @@ The config that I use it too complicated for the average person's needs. If all 
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `medic.cfg`
-1. Below the line that says `exec reset`, add:
+1. Below the line that says `exec allclass`, add:
 
    ```
    alias alertUber "say_team UBER POPPED!!!!!"
