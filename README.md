@@ -1,6 +1,6 @@
 # Starter Config
 
-If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and/or a [Rocket Jump Script](https://youtu.be/mwGKUsq1fTM), this is the config you should use.
+If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and/or a [Rocket Jump Script](https://youtu.be/T0nc-jepGVw), this is the config you should use.
 
 ## Install
 
