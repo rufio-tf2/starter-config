@@ -5,8 +5,8 @@ If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and
 ## Install
 
 1. Download
-   * [Starter Config](https://github.com/rufio-tf2/starter-config/archive/master.zip)
-   * [Starter Config (For Mastercomfig)](https://github.com/rufio-tf2/starter-config/archive/for-mastercomfig.zip)
+   - [Starter Config](https://github.com/rufio-tf2/starter-config/archive/master.zip)
+   - [Starter Config (For Mastercomfig)](https://github.com/rufio-tf2/starter-config/archive/v2-for-mastercomfig.zip)
 1. Unzip it
 1. If your folder structure is `starter-config-master/starter-config-master` save the inner folder and delete the outer folder
 1. Move the remaining `starter-config-master` folder into your `tf/custom` folder
