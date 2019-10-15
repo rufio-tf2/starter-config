@@ -4,24 +4,20 @@ If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and
 
 ## Install
 
-1. Download
-   - [Starter Config](https://github.com/rufio-tf2/starter-config/archive/master.zip)
-   - [Starter Config (For Mastercomfig)](https://github.com/rufio-tf2/starter-config/archive/v2-for-mastercomfig.zip)
+1. [Download the ZIP](https://github.com/rufio-tf2/starter-config/archive/master.zip)
 1. Unzip it
 1. If your folder structure is `starter-config-master/starter-config-master` save the inner folder and delete the outer folder
 1. Move the remaining `starter-config-master` folder into your `tf/custom` folder
 1. Navigate into the `cfg` folder (`tf/custom/starter-config-master/cfg`) to add your configurations
 1. Feel free to rename `starter-config-master`
 
-## Configure things
+## Example of how to use
 
-### Examples
-
-#### Rocket Jump Script
+### Rocket Jump Script
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `soldier.cfg`
-1. Below the line that says `exec allclass`, uncomment the lines (remove the `//` slashes):
+1. Below the line that says `exec reset`, uncomment the lines (remove the `//` slashes):
 
    ```
    alias +rocketJump "+jump; +duck; +attack;"
@@ -30,7 +26,7 @@ If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and
    ```
 
 1. Change `KEY` to be whatever key you want to use for the rocket jump script
-1. Open `allclass.cfg`, and reset the `KEY` to its default command (look [here](https://wiki.teamfortress.com/wiki/List_of_default_keys)). For example, if you used `MOUSE2` (right-click) for the rocket jump script, you should add this:
+1. Open `reset.cfg`, and reset the `KEY` to its default command (look [here](https://wiki.teamfortress.com/wiki/List_of_default_keys)). For example, if you used `MOUSE2` (right-click) for the rocket jump script, you should add this:
 
    ```
    bind MOUSE2 +attack2
@@ -38,11 +34,11 @@ If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and
 
 1. Restart TF2
 
-#### Uber Bind
+### Uber Bind
 
 1. Navigate into the `cfg` folder installed above: `tf/custom/starter-config-master/cfg`
 1. Open `medic.cfg`
-1. Below the line that says `exec allclass`, uncomment the lines (remove the `//` slashes):
+1. Below the line that says `exec reset`, uncomment the lines (remove the `//` slashes):
 
    ```
    alias alertUber "say_team UBER POPPED!!!!!"
@@ -51,10 +47,22 @@ If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and
    bind MOUSE2 +alertAndPopUber
    ```
 
-1. Open `allclass.cfg`, and reset `MOUSE2` to its default command:
+1. Open `reset.cfg`, and reset `MOUSE2` to its default command:
 
    ```
    bind MOUSE2 +attack2
    ```
 
 1. Restart TF2
+
+### `autoexec.cfg`
+
+The `autoexec.cfg` file is automatically run by TF2 when the game loads. People use this file for FPS configs, and other game configurations that only need to run once when the game loads.
+
+You can only have one `autoexec.cfg` file. I named the one here `c_autoexec.cfg` to avoid any conflicts in case you already have an FPS config or whatever. I still wanted to include the empty file for people who want an `autoexec.cfg` and don't have another config with its own.
+
+If you don't have a different `autoexec.cfg`, you can remove the `c_` from this config's file and rename it to just `autoexec.cfg`. Once you restart TF2 it will run every time you launch the game.
+
+If you already have an FPS config and you're using this config for the class files, my recommendation would be to integrate your FPS config into this config. Here's an example of how I did that with Comanglia's FPS config:
+
+https://github.com/rufio-tf2/comanglia-with-class-config
