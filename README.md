@@ -59,10 +59,6 @@ If all you want to do is create an [Uber Bind](https://youtu.be/a8yKrKD1EJg) and
 
 The `autoexec.cfg` file is automatically run by TF2 when the game loads. People use this file for FPS configs, and other game configurations that only need to run once when the game loads.
 
-You can only have one `autoexec.cfg` file. I named the one here `c_autoexec.cfg` to avoid any conflicts in case you already have an FPS config or whatever. I still wanted to include the empty file for people who want an `autoexec.cfg` and don't have another config with its own.
-
-If you don't have a different `autoexec.cfg`, you can remove the `c_` from this config's file and rename it to just `autoexec.cfg`. Once you restart TF2 it will run every time you launch the game.
-
-If you already have an FPS config and you're using this config for the class files, my recommendation would be to integrate your FPS config into this config. Here's an example of how I did that with Comanglia's FPS config:
+You can only have one `autoexec.cfg` file. If you already have an FPS config and you're using this config for the class files, my recommendation would be to integrate your FPS config into this config by renaming the other configs' `autoexec.cfg` files to anything else, and then having this config's `autoexec.cfg` load the files that you renamed. The game loads this one `autoexec.cfg` file, and that file in turn loads any others that you need. Here's an example of how I did that with Comanglia's FPS config:
 
 https://github.com/rufio-tf2/comanglia-with-class-config
